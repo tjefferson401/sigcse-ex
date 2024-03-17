@@ -1,0 +1,7 @@
+# This repo contains systems for benchmarking pyodide
+
+TO TEST:
+1. Uncomment the pyodide script from /main.html that aligns with the version you want to test. Make sure that only one pyodide version is uncommented.
+2. run `npm start` in the console.
+3. select the version that is being run in the select box.
+4. press run.

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Run Code</title>
+    <!--UNTOUCHED PYODIDE BELOW  -->
+    <!-- <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script> -->
+    <!--WEBWORKER PYODIDE BELOW  -->
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.1/full/pyodide.js"></script>
+    <!--UNTHROW PYODIDE BELOW  -->
+    <!-- <script src="/build/pyodide.js"></script> -->
+
+    <script type="module" src="del.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython_stdlib.js">
+    </script>
+
+
+</head>
+<body>
+    <h1>Run Your Code</h1>
+    <textarea id="codeInput" placeholder="Enter your code here"></textarea>
+    <br>
+    <select id="runTypeSelect">
+        <option value="web-worker">Web Worker</option>
+        <option value="pure-pyodide">Pure Pyodide</option>
+        <option value="cip">CIP</option>
+
+    </select>
+    <br>
+    <button id="runButton">Run</button>
+    <br/>
+    <canvas id="canvas" width="400px" height="400px" style="border: 1px black solid;"/>
+
+</body>
+</html>
+
